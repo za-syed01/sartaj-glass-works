@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sartaj Glass Works – Glass Specialists for All Vehicles, Chennai</title>
+  <meta name="description" content="Sartaj Glass Works – Chennai's trusted glass specialists for cars, SUVs, trucks, buses & all vehicles. Windshield replacement, repair, tinting in Poonamallee." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ── NAVBAR ── -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <img src="images/logo.png" alt="Sartaj Glass Works" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-main">SARTAJ GLASS WORKS</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#installation">Our Craft</a>
+        <a href="#clients">Clients</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="tel:+919840037865" class="btn btn-primary nav-cta">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-photo" style="background-image: url('images/hero-bg.png')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        Automotive Glass Specialists · Poonamallee, Chennai
+      </div>
+      <h1 class="hero-title">
+        Precision Glass.<br />
+        <span class="gradient-text">Every Vehicle.</span>
+      </h1>
+      <p class="hero-desc">
+        From passenger cars to heavy commercial fleet — windshields, door glass, fixed panels &amp; rear glass. <strong>OEM-grade materials, expert hands, and 30 years of Chennai trust.</strong>
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary btn-lg">
+          Get Free Estimate <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#services" class="btn btn-outline btn-lg">
+          Our Services
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">30+</span>
+          <span class="stat-label">Years of Expertise</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">All</span>
+          <span class="stat-label">Vehicle Categories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">Same Day</span>
+          <span class="stat-label">Most Repairs</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Complete Automotive Glass Solutions</h2>
+        <p class="section-desc">We supply and fit every category of automotive glass — for passenger cars, SUVs, buses, trucks, vans, earth movers and heavy commercial vehicles. OEM-grade precision, every single job.</p>
+      </div>
+      <div class="services-carousel-outer" data-aos>
+        <button class="carousel-btn svc-prev" aria-label="Previous services">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="services-carousel">
+          <div class="services-track">
+
+            <div class="service-card sc-windshield featured">
+              <div class="service-img"></div>
+              <div class="service-body">
+                <h3>Windshield</h3>
+                <p>OEM-grade laminated glass, precision-bonded with urethane for a leak-proof, rattle-free finish.</p>
+              </div>
+            </div>
+
+            <div class="service-card sc-door">
+              <div class="service-img"></div>
+              <div class="service-body">
+                <h3>Door Side Glass</h3>
+                <p>Tempered safety glass for all door positions — power-window regulator check included.</p>
+              </div>
+            </div>
+
+            <div class="service-card sc-fixed">
+              <div class="service-img"></div>
+              <div class="service-body">
+                <h3>Fixed Glass</h3>
+                <p>Non-opening panels — quarter glasses, vent windows and fixed rear side panes.</p>
+              </div>
+            </div>
+
+            <div class="service-card sc-rear">
+              <div class="service-img"></div>
+              <div class="service-body">
+                <h3>Rear Glass</h3>
+                <p>Replacement with full defogger grid reconnection, antenna integration and electrical testing.</p>
+              </div>
+            </div>
+
+            <div class="service-card sc-rubber">
+              <div class="service-img"></div>
+              <div class="service-body">
+                <h3>Rubber Fitting</h3>
+                <p>Precision rubber beading and gasket seals fitted around glass panels for a weather-tight, rattle-free result.</p>
+              </div>
+            </div>
+
+            <div class="service-card sc-sliding">
+              <div class="service-img"></div>
+              <div class="service-body">
+                <h3>Sliding Glass</h3>
+                <p>Smooth-sliding panels for buses, vans and commercial vehicles — track, runner and seal replacement included.</p>
+              </div>
+            </div>
+
+            <div class="service-card sc-fibre">
+              <div class="service-img"></div>
+              <div class="service-body">
+                <h3>Fibre Glass</h3>
+                <p>Specialist fibre-reinforced panels for industrial vehicles, earth movers and heavy-duty custom applications.</p>
+              </div>
+            </div>
+
+            <div class="service-card sc-emergency">
+              <div class="service-img"></div>
+              <div class="service-body">
+                <h3>Emergency Door Glass</h3>
+                <p>Purpose-built emergency exit glazing for buses and coaches — safety-rated, compliant and quick-release.</p>
+              </div>
+            </div>
+
+            <div class="service-card sc-safety">
+              <div class="service-img"></div>
+              <div class="service-body">
+                <h3>Safety Glass</h3>
+                <p>Laminated and toughened safety glass — engineered to absorb impact without shattering, for every application.</p>
+              </div>
+            </div>
+
+          </div><!-- /services-track -->
+        </div><!-- /services-carousel -->
+        <button class="carousel-btn svc-next" aria-label="Next services">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div><!-- /services-carousel-outer -->
+      <div class="carousel-dots" id="svcDots"></div>
+    </div>
+  </section>
+
+  <!-- ── MID CTA ── -->
+  <section class="mid-cta" id="vehicles">
+    <div class="container mid-cta-inner mid-cta-centered">
+      <div class="mid-cta-text" data-aos>
+        <div class="mid-cta-badge"><i class="fa-solid fa-bolt"></i> Same-Day Service Available</div>
+        <h2>Glass damaged?<br/>We'll have you back on the road today.</h2>
+        <p>Walk in or call ahead — most jobs completed within 2–3 hours. We stock glass for all vehicles: cars, SUVs, vans, trucks, buses, and commercial fleet.</p>
+        <div class="mid-cta-btns">
+          <a href="tel:+919840037865" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+          <a href="https://wa.me/919840037865" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY US ── -->
+  <section class="section why-us" id="why-us">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-left">
+          <span class="section-tag light">Why Choose Us</span>
+          <h2 class="section-title light">30 Years. Zero Compromises.</h2>
+          <p class="section-desc light">
+            Three decades of trusted glass expertise — serving private vehicle owners, commercial fleet operators, and industry partners across Chennai. We've built our reputation one perfectly fitted pane at a time.
+          </p>
+          <div class="why-features">
+            <div class="why-feature">
+              <div class="why-icon"><i class="fa-solid fa-medal"></i></div>
+              <div>
+                <h4>OEM &amp; OEE Grade Glass</h4>
+                <p>Only Original Equipment Manufacturer and OEE-certified glass — identical quality to factory-fitted panels.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon"><i class="fa-solid fa-truck-fast"></i></div>
+              <div>
+                <h4>Same-Day Turnaround</h4>
+                <p>Most replacements completed within 2–3 hours. We carry stock for all vehicle types — no unnecessary waits.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div>
+                <h4>Warranty-Backed Fitment</h4>
+                <p>Every installation is guaranteed — bonding, sealing and fit covered. If it isn't right, we make it right.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
+              <div>
+                <h4>30 Years of Trusted Service</h4>
+                <p>Three decades of repeat customers — fleet operators, transporters and individual owners who come back because the work speaks for itself.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-right">
+          <div class="why-img-wrap">
+            <img
+              src="images/sartaj-glass-office.png"
+              alt="Sartaj Glass Works workshop"
+              class="why-photo"
+              onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"
+            />
+          </div>
+          <div class="brands-row">
+            <span class="brand-pill">Cars</span>
+            <span class="brand-pill">SUVs</span>
+            <span class="brand-pill">Trucks</span>
+            <span class="brand-pill">Buses</span>
+            <span class="brand-pill">Vans</span>
+            <span class="brand-pill">Pickups</span>
+            <span class="brand-pill">Earth Movers</span>
+            <span class="brand-pill">Heavy Vehicles</span>
+            <span class="brand-pill">Coaches</span>
+            <span class="brand-pill">Commercial Fleet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INSTALLATION CRAFT ── -->
+  <section class="section install-craft" id="installation">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Quality of Work</span>
+        <h2 class="section-title">How We Install Your Glass</h2>
+        <p class="section-desc">Every installation follows our 8-step quality standard — refined over 30 years of hands-on experience. No shortcuts, no guesswork. Just the precision that keeps you safe on the road.</p>
+      </div>
+      <div class="craft-grid">
+
+        <div class="craft-card" data-aos data-delay="0">
+          <div class="craft-img" style="background-image:url('images/measurement.png')"></div>
+          <div class="craft-content">
+            <h4>Glass Measurement</h4>
+            <p>Precision measurement with calibrated tools for zero-gap fit.</p>
+          </div>
+        </div>
+
+        <div class="craft-card" data-aos data-delay="80">
+          <div class="craft-img" style="background-image:url('images/frame-preparation.png')"></div>
+          <div class="craft-content">
+            <h4>Frame Preparation</h4>
+            <p>Old adhesive and debris cleaned for a flawless bond surface.</p>
+          </div>
+        </div>
+
+        <div class="craft-card" data-aos data-delay="160">
+          <div class="craft-img" style="background-image:url('images/glass-cutting.png')"></div>
+          <div class="craft-content">
+            <h4>Glass Cutting</h4>
+            <p>Exact dimensions, smooth chip-free edges every time.</p>
+          </div>
+        </div>
+
+        <div class="craft-card" data-aos data-delay="240">
+          <div class="craft-img" style="background-image:url('images/rubber-breading.png')"></div>
+          <div class="craft-content">
+            <h4>Rubber Beading</h4>
+            <p>Watertight gaskets sealed around the glass perimeter.</p>
+          </div>
+        </div>
+
+        <div class="craft-card" data-aos data-delay="0">
+          <div class="craft-img" style="background-image:url('images/adhesive-application.png')"></div>
+          <div class="craft-content">
+            <h4>Adhesive Application</h4>
+            <p>OEM-grade polyurethane applied in precise bead pattern.</p>
+          </div>
+        </div>
+
+        <div class="craft-card" data-aos data-delay="80">
+          <div class="craft-img" style="background-image:url('images/glass-fitting.png')"></div>
+          <div class="craft-content">
+            <h4>Glass Fitting</h4>
+            <p>Positioned with suction tools, pressed firm for full contact.</p>
+          </div>
+        </div>
+
+        <div class="craft-card" data-aos data-delay="160">
+          <div class="craft-img" style="background-image:url('images/alignment.png')"></div>
+          <div class="craft-content">
+            <h4>Alignment &amp; Finishing</h4>
+            <p>Flush fit verified, edges polished to factory standard.</p>
+          </div>
+        </div>
+
+        <div class="craft-card" data-aos data-delay="240">
+          <div class="craft-img" style="background-image:url('images/leak-testing.png')"></div>
+          <div class="craft-content">
+            <h4>Leak Testing</h4>
+            <p>Water-pressure tested — leaves only after a 100% pass.</p>
+          </div>
+        </div>
+
+      </div><!-- /craft-grid -->
+    </div>
+  </section>
+
+
+  <!-- ── CLIENTS ── -->
+  <section class="section clients-section auto-clients" id="clients">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <div class="section-tag">OUR CLIENTS</div>
+        <h2 class="section-title light">Trusted by Industry Leaders &amp;<br/>Commercial Fleet Operators</h2>
+        <p class="section-desc light">From airline ground support vehicles to heavy commercial manufacturers — over three decades, Sartaj Glass Works has earned the confidence of Chennai's most demanding fleet operators and industry partners.</p>
+      </div>
+    </div>
+    <div class="clients-ticker-wrap">
+      <div class="clients-ticker">
+        <!-- Set 1 -->
+        <div class="client-logo cl-emirates"><div class="logo-slot"><img src="images/clients-images/emirates.png" alt="Emirates"/></div></div>
+        <div class="client-logo cl-indigo"><div class="logo-slot"><img src="images/clients-images/indigo.png" alt="IndiGo"/></div></div>
+        <div class="client-logo cl-air-india"><div class="logo-slot"><img src="images/clients-images/air-india.png" alt="Air India"/></div></div>
+        <div class="client-logo cl-spicejet"><div class="logo-slot"><img src="images/clients-images/spicejet.png" alt="SpiceJet"/></div></div>
+        <div class="client-logo cl-volvo"><div class="logo-slot"><img src="images/clients-images/volvo.png" alt="Volvo"/></div></div>
+        <div class="client-logo cl-mercedes"><div class="logo-slot"><img src="images/clients-images/mercedes.png" alt="Mercedes-Benz"/></div></div>
+        <div class="client-logo cl-kia"><div class="logo-slot"><img src="images/clients-images/kia.png" alt="KIA"/></div></div>
+        <div class="client-logo cl-scania"><div class="logo-slot"><img src="images/clients-images/scania.png" alt="Scania"/></div></div>
+        <div class="client-logo cl-ashok-leyland"><div class="logo-slot"><img src="images/clients-images/ashok-leyland.png" alt="Ashok Leyland"/></div></div>
+        <div class="client-logo cl-indian-railways"><div class="logo-slot"><img src="images/clients-images/indian-railways.png" alt="Indian Railways"/></div></div>
+        <!-- Set 2 — duplicate for seamless loop -->
+        <div class="client-logo cl-emirates"><div class="logo-slot"><img src="images/clients-images/emirates.png" alt="Emirates"/></div></div>
+        <div class="client-logo cl-indigo"><div class="logo-slot"><img src="images/clients-images/indigo.png" alt="IndiGo"/></div></div>
+        <div class="client-logo cl-air-india"><div class="logo-slot"><img src="images/clients-images/air-india.png" alt="Air India"/></div></div>
+        <div class="client-logo cl-spicejet"><div class="logo-slot"><img src="images/clients-images/spicejet.png" alt="SpiceJet"/></div></div>
+        <div class="client-logo cl-volvo"><div class="logo-slot"><img src="images/clients-images/volvo.png" alt="Volvo"/></div></div>
+        <div class="client-logo cl-mercedes"><div class="logo-slot"><img src="images/clients-images/mercedes.png" alt="Mercedes-Benz"/></div></div>
+        <div class="client-logo cl-kia"><div class="logo-slot"><img src="images/clients-images/kia.png" alt="KIA"/></div></div>
+        <div class="client-logo cl-scania"><div class="logo-slot"><img src="images/clients-images/scania.png" alt="Scania"/></div></div>
+        <div class="client-logo cl-ashok-leyland"><div class="logo-slot"><img src="images/clients-images/ashok-leyland.png" alt="Ashok Leyland"/></div></div>
+        <div class="client-logo cl-indian-railways"><div class="logo-slot"><img src="images/clients-images/indian-railways.png" alt="Indian Railways"/></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Customer Reviews</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-desc">Real reviews from Google — every vehicle, every job, every time.</p>
+      </div>
+    </div>
+
+    <!-- Continuous scrolling reviews ticker -->
+    <div class="reviews-ticker-wrap">
+      <div class="reviews-ticker">
+
+        <!-- Set 1 -->
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Big Bus glass replaced in ½ hour — very fast and quick service on the Chennai–Bangalore highway main road. Highly impressed with the speed and quality."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RP</div>
+            <div>
+              <span class="reviewer-name">Ram Prasad</span>
+              <span class="reviewer-loc">a month ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Rate is genuine, staff behaviour is excellent and the overall experience was very pleasant. Transparent pricing — no hidden charges whatsoever."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">AS</div>
+            <div>
+              <span class="reviewer-name">Abhinav Shree</span>
+              <span class="reviewer-loc">2 months ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Mashallah excellent service. Very professional team, got the job done quickly and cleanly. One of the best glass shops I've been to — will definitely return."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">NM</div>
+            <div>
+              <span class="reviewer-name">Nowshir Mint</span>
+              <span class="reviewer-loc">a year ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Nice and quick work. They handled my vehicle efficiently with no delays — good quality glass and a clean, rattle-free installation. Very satisfied."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RR</div>
+            <div>
+              <span class="reviewer-name">Ragul Ragul</span>
+              <span class="reviewer-loc">2 years ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Good service and friendly staff. Came in for a glass replacement and it was done faster than expected. Fair pricing and clean workmanship — highly recommend."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">TR</div>
+            <div>
+              <span class="reviewer-name">Teeka Ram</span>
+              <span class="reviewer-loc">3 years ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Quick service — no waiting around. They had the part in stock and fitted it on the spot. Very pleased with the finish and the overall experience."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">SY</div>
+            <div>
+              <span class="reviewer-name">Syed Yaasar Ahamed</span>
+              <span class="reviewer-loc">2 years ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Our travel fleet vehicles get serviced here regularly. Always reliable, always on time — this is the most dependable glass shop on this stretch of road."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">KK</div>
+            <div>
+              <span class="reviewer-name">Kumares Kutty</span>
+              <span class="reviewer-loc">4 years ago · Local Guide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <p>"Good place for automobile glasses — serves all vehicle types. Reasonable pricing, knowledgeable staff and decent workmanship. Gets the job done right."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">YU</div>
+            <div>
+              <span class="reviewer-name">YUVA</span>
+              <span class="reviewer-loc">5 years ago · Local Guide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Set 2 — duplicate for seamless infinite loop -->
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Big Bus glass replaced in ½ hour — very fast and quick service on the Chennai–Bangalore highway main road. Highly impressed with the speed and quality."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RP</div>
+            <div>
+              <span class="reviewer-name">Ram Prasad</span>
+              <span class="reviewer-loc">a month ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Rate is genuine, staff behaviour is excellent and the overall experience was very pleasant. Transparent pricing — no hidden charges whatsoever."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">AS</div>
+            <div>
+              <span class="reviewer-name">Abhinav Shree</span>
+              <span class="reviewer-loc">2 months ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Mashallah excellent service. Very professional team, got the job done quickly and cleanly. One of the best glass shops I've been to — will definitely return."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">NM</div>
+            <div>
+              <span class="reviewer-name">Nowshir Mint</span>
+              <span class="reviewer-loc">a year ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Nice and quick work. They handled my vehicle efficiently with no delays — good quality glass and a clean, rattle-free installation. Very satisfied."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RR</div>
+            <div>
+              <span class="reviewer-name">Ragul Ragul</span>
+              <span class="reviewer-loc">2 years ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Good service and friendly staff. Came in for a glass replacement and it was done faster than expected. Fair pricing and clean workmanship — highly recommend."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">TR</div>
+            <div>
+              <span class="reviewer-name">Teeka Ram</span>
+              <span class="reviewer-loc">3 years ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Quick service — no waiting around. They had the part in stock and fitted it on the spot. Very pleased with the finish and the overall experience."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">SY</div>
+            <div>
+              <span class="reviewer-name">Syed Yaasar Ahamed</span>
+              <span class="reviewer-loc">2 years ago · Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Our travel fleet vehicles get serviced here regularly. Always reliable, always on time — this is the most dependable glass shop on this stretch of road."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">KK</div>
+            <div>
+              <span class="reviewer-name">Kumares Kutty</span>
+              <span class="reviewer-loc">4 years ago · Local Guide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <p>"Good place for automobile glasses — serves all vehicle types. Reasonable pricing, knowledgeable staff and decent workmanship. Gets the job done right."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">YU</div>
+            <div>
+              <span class="reviewer-name">YUVA</span>
+              <span class="reviewer-loc">5 years ago · Local Guide</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /reviews-ticker -->
+    </div><!-- /reviews-ticker-wrap -->
+
+    <div class="container">
+      <div class="google-badge" style="margin-top:40px">
+        <i class="fa-brands fa-google"></i>
+        <span>Rated <strong>4.9/5</strong> on Google Maps · Poonamallee, Chennai</span>
+        <a href="https://share.google/rqs8jdzGH1nIuREi7" target="_blank" rel="noopener" class="badge-link">See all reviews <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Find Us</span>
+        <h2 class="section-title">Visit Our Shop</h2>
+        <p class="section-desc">Walk in or call ahead — open daily 9 AM to 9 PM. Our experienced team is ready to help with any vehicle, any glass type.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Address</h4>
+                <p>Sartaj Glass Works<br />
+                  333V+V22, Bengaluru – Chennai Hwy<br />
+                  Ettima Nagar, Poonamallee<br />
+                  Chennai, Tamil Nadu – 600056
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+919840037865" class="contact-link">+91 98400 37865</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Open Daily · 9:00 AM – 9:00 PM</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/919840037865" target="_blank" rel="noopener" class="contact-link">Chat with us on WhatsApp</a>
+              </div>
+            </div>
+            <a href="https://share.google/rqs8jdzGH1nIuREi7" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-map-location-dot"></i> Get Directions on Google Maps
+            </a>
+          </div>
+        </div>
+        <div class="map-container">
+          <div id="sartaj-map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="images/logo.png" alt="Sartaj Glass Works" class="logo-img" />
+          <div class="logo-text">
+            <span class="logo-main">SARTAJ GLASS WORKS</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Chennai's automotive glass specialists for every vehicle on the road — from personal cars to heavy commercial fleet. Trusted by owners, operators and industry partners for over 30 years.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Windshield Replacement</a></li>
+          <li><a href="#services">Door Side Glass</a></li>
+          <li><a href="#services">Fixed Glass</a></li>
+          <li><a href="#services">Rear Glass</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Vehicle Types</h5>
+        <ul>
+          <li>Cars &amp; SUVs</li>
+          <li>Buses &amp; Coaches</li>
+          <li>Trucks &amp; Pickups</li>
+          <li>Vans &amp; Minibuses</li>
+          <li>Earth Movers</li>
+          <li>Commercial Fleet</li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Contact</h5>
+        <ul>
+          <li><i class="fa-solid fa-phone fa-xs"></i> +91 98400 37865</li>
+          <li><i class="fa-solid fa-location-dot fa-xs"></i> Ettima Nagar, Poonamallee – 600056</li>
+          <li>
+            <a href="https://share.google/rqs8jdzGH1nIuREi7" target="_blank" rel="noopener">
+              <i class="fa-brands fa-google fa-xs"></i> View on Google Maps
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 Sartaj Glass Works. All rights reserved.</span>
+        <span>Glass Specialists · Chennai, Tamil Nadu</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
