@@ -237,7 +237,7 @@ img { max-width: 100%; display: block; }
 /* ────────────────────────────────
    SERVICES
 ──────────────────────────────── */
-.services { background: var(--white); }
+.services { background: var(--white); overflow-x: hidden; }
 .services .section-header { max-width: 880px; }
 
 /* ── Services Carousel ── */
@@ -700,9 +700,12 @@ img { max-width: 100%; display: block; }
 .contact-item p  { font-size: .9rem; color: #374151; line-height: 1.7; }
 .contact-link { color: var(--blue); font-size: .9rem; font-weight: 700; transition: color .2s; display: inline-block; }
 .contact-link:hover { color: var(--gold-dk); }
-.map-container { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); min-height: 420px; border: 1px solid var(--light); }
+.map-container { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); min-height: 420px; border: 1px solid var(--light); min-width: 0; }
 .map-container iframe { width: 100%; height: 100%; min-height: 420px; }
 #sartaj-map { width: 100%; height: 100%; min-height: 420px; }
+/* Prevent Leaflet's internal proxy element from blowing out grid layout */
+.contact-info { min-width: 0; }
+.contact-card { width: 100%; box-sizing: border-box; }
 
 /* ────────────────────────────────
    FOOTER

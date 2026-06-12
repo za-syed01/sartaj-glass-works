@@ -176,7 +176,7 @@ if (progressBar) {
       <div style="font-family:'Plus Jakarta Sans',sans-serif;min-width:180px;padding:4px 0">
         <strong style="font-size:14px;color:#0d1a3a">Sartaj Glass Works</strong><br/>
         <span style="font-size:12px;color:#5a6a85">333V+V22, Bengaluru–Chennai Hwy<br/>Ettima Nagar, Poonamallee<br/>Chennai – 600056</span><br/><br/>
-        <a href="https://maps.google.com/?q=${LAT},${LNG}" target="_blank"
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Sartaj+Glass+Works,+333V%2BV22,+Bengaluru-Chennai+Hwy,+Ettima+Nagar,+Poonamallee,+Chennai" target="_blank"
            style="font-size:12px;font-weight:700;color:#1a56db;text-decoration:none;">
           Get Directions &rarr;
         </a>
